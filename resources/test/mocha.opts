@@ -1,0 +1,10 @@
+--reporter spec
+--ui bdd
+--growl
+--bail
+--compilers js:babel/register
+--timeout 2000000
+--check-leaks
+--recursive
+--timeout 4000
+--colors

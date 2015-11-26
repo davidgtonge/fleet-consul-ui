@@ -1,0 +1,14 @@
+@include font-load("lato/Lato-Light", "practical", 100, 200) {
+  font-family: 'Lato';
+  font-style: normal;
+}
+
+@include font-load("lato/Lato-Regular", "practical", 300, 400, 500) {
+  font-family: 'Lato';
+  font-style: normal;
+}
+
+@include font-load("lato/Lato-Bold", "practical", normal, bold, 600, 700) {
+  font-family: 'Lato';
+  font-style: normal;
+}

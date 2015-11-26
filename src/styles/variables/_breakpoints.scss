@@ -1,0 +1,14 @@
+// -- Breakpoints Map ------------------
+$breakpoints: (
+  tiny: 320,
+  x-small: 375,
+  smaller: 400,
+  small: 600,
+  medium: 768,
+  regular: 900,
+  large: 1024,
+  gt-large: 1025,
+  x-large: 1300,
+  xx-large: 1400,
+  xxx-large: 1600
+);

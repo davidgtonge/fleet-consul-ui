@@ -1,0 +1,27 @@
+/*
+_theme.scss
+
+- color
+- background
+- effects
+- list style
+*/
+@import './variables/_colour';
+
+.navbar {
+  background-color: $clr-brand-primary;
+  color: white;
+  border: none;
+  border-radius: 0;
+}
+
+.sidebar-container {
+  background-color: rgba(75, 80, 75, 1);
+  color: white;
+  &__list {
+    list-style-type: none;
+  }
+  &__item a {
+    color: $clr-lightest;
+  }
+}

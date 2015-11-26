@@ -1,0 +1,28 @@
+/*
+_typography.scss
+
+- set font families
+- sizes
+*/
+
+@import "./../variables/_typography";
+
+@font-face {
+  font-family: "Lato Regular";
+  src: url("fonts/lato/Lato-Regular.eot") format("eot"),
+       url("fonts/lato/Lato-Regular.woff") format("woff"),
+       url("fonts/lato/Lato-Regular.ttf") format("truetype"),
+       url("fonts/lato/Lato-Regular.svg#Gotham") format("svg");
+}
+
+.primary-title {
+  font-family : "Lato Regular";
+  font-size: font-size("large");
+  font-weight: 300;
+}
+
+.secondary-title {
+  font-family : "Lato Regular";
+  font-size: font-size("medium");
+  font-weight: 300;
+}

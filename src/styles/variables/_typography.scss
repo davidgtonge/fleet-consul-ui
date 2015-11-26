@@ -1,0 +1,17 @@
+$basefont: 14;
+
+@function em($target, $context: $basefont) {
+  @return ($target / $context) * 1em;
+}
+
+$font-sizes: (
+  tiny: em(14),
+  small: em(16),
+  medium: em(18),
+  large: em(28),
+  extra-large: em(32)
+);
+
+@function font-size($key) {
+  @return map-get($font-sizes, $key)
+};

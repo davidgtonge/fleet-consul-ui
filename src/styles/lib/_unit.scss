@@ -1,0 +1,29 @@
+$base-unit: 8px;
+
+@function unit($key) {
+
+  @if type-of($unit-map) != map {
+    @warn "#{$unit-map} must be a map";
+  }
+  // check key exists
+  @if map-has-key($unit-map, $key) {
+    // return key value
+    @return map-get($unit-map, $key)
+
+  } @else {
+    @warn "#{$key} not found in map : #{$unit-map}";
+  }
+  @return null;
+}
+
+@function base-unit($count:0, $factor:1) {
+  @return ($count * $base-unit) * $factor;
+}
+
+@function push($count) {
+  @return base-unit($count, 1);
+}
+
+@function pull($count) {
+  @return base-unit($count, -1);
+}
