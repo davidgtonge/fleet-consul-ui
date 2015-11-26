@@ -4,7 +4,6 @@ import {
   createStore,
   applyMiddleware,
   compose} from "redux"
-import thunk from "redux-thunk"
 import createLogger from "redux-logger"
 import {reduxReactRouter, routerStateReducer} from "redux-router"
 import createHistory from "history/lib/createBrowserHistory"
@@ -27,7 +26,6 @@ export default function configureStore(routes, middleware, reducers, initialStat
 function buildStore(routes, middleware, rootReducer, initialState) {
   const middlewareToApply = [
     createLogger(),
-    thunk,
     ...middleware,
   ]
   return compose(
